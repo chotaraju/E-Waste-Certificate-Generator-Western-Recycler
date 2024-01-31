@@ -4,7 +4,6 @@ const urlsToCache = [
   'index.html',
   './assets/favicon/site.webmanifest',
   './assets/favicon/android-chrome-512x512.png'
-  // Add other files and routes to cache as needed
 ];
 
 self.addEventListener('install', (event) => {
