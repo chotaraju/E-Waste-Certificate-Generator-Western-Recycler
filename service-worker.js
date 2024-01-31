@@ -1,6 +1,6 @@
 const CACHE_NAME = 'your-cache-name';
 const urlsToCache = [
-  '/',
+  '/E-Waste-Certificate-Generator-Western-Recycler/',
   'index.html',
   './assets/favicon/site.webmanifest',
   './assets/favicon/android-chrome-512x512.png'
