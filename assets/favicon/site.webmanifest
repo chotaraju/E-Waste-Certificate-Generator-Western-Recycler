@@ -2,7 +2,7 @@
     "name": "E-Waste Certificate Generator | Western Recycler",
     "short_name": "Western Recycler",
     "description": "E Waste Certificate Generator for Western Recycler",
-    "start_url": "//E-Waste-Certificate-Generator-Western-Recycler/",
+    "start_url": "/E-Waste-Certificate-Generator-Western-Recycler/",
     "icons": [
         {
             "src": "https://chotaraju.github.io/E-Waste-Certificate-Generator-Western-Recycler/assets/favicon/android-chrome-192x192.png",
