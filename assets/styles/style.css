@@ -1,0 +1,32 @@
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-top: #ec983a 6px solid;
+    border-bottom: #5aae46 6px solid;
+}
+
+h2{
+    margin: 34px 0px;
+    color: #234f8a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+}
+
+.form-group{
+    margin: 12px;
+    font-weight: bold;
+}
+
+.submit{
+    width: 300px;
+    margin-left: 18px;
+}
+
+.view{
+    width: 300px;
+    margin-left: 30px;
+}

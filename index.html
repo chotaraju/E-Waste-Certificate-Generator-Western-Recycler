@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>E-Waste Certificate Generator | Western Recycler</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/styles/bootswatch.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- pdfMake -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.9/pdfmake.min.js" integrity="sha512-5wC3oH3tojdOtHBV6B4TXjlGc0E2uk3YViSrWnv1VUmmVlQDAs1lcupsqqpwjh8jIuodzADYK5xCL5Dkg/ving==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 140vh;">
+    <div class="container shadow p-3 mb-2 bg-white rounded-lg" style="max-width: 700px;">
+        <!-- Image Section -->
+        <div class="text-center mb-4">
+            <img src="assets/images/destruction-cert.png" alt="Your Image" class="img-fluid" width="50%">
+        </div>
+        <!-- Form Section -->
+        <form>
+            <!-- heading -->
+            <h2 class="text-center">E-Waste Certificate Generator</h2>
+            <!-- Certificate Date -->
+            <div class="form-group">
+                <label for="certdate" class="text-dark">Certificate Date <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" id="certdate" required>
+            </div>
+            <!-- Dated E-Waste Picked On -->
+            <div class="form-group">
+                <label for="datedEWastePickedOn">Dated E-Waste Picked On <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" id="datedEWastePickedOn" required>
+            </div>
+            <!-- Description Company Name -->
+            <div class="form-group">
+                <label for="DescCompanyName">Description Company Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="DescCompanyName" required maxlength="40" placeholder="Company Name on Certificate Description">
+            </div>
+            <!-- Company Name -->
+            <div class="form-group">
+                <label for="companyName">Company Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="companyName" required placeholder="Company Name" autocomplete="on">
+            </div>
+            <!-- Company Address -->
+            <div class="form-group">
+                <label for="companyAddress">Company Address <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="companyAddress" required placeholder="Company Address" autocomplete="on">
+            </div>
+            <!-- Amount of E-Waste Picked -->
+            <div class="form-group">
+                <label for="amountOfEWaste">Amount of E-Waste Picked <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="amountOfEWaste" required placeholder="Amount of E-Waste Picked" autocomplete="off">
+            </div>
+            <!-- Invoice No/ BOE No -->
+            <div class="form-group">
+                <label for="InvoiceNoBOENo">Invoice No/ BOE No <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="InvoiceNoBOENo" required placeholder="Invoice No/ BOE No" autocomplete="off">
+            </div>
+            <br>
+            <!-- Submit Details -->
+            <button type="button" class="btn btn-outline-success submit" onclick="submitForm()">Submit Details</button>
+            <!-- Generate Certificate -->
+            <button type="button" class="btn btn-outline-info view" onclick="generatePDF()">Generate Certificate</button>
+        </form>
+        <hr>
+        <!-- copyright -->
+        <p id="copyright">© Western Recycler Made with ❤️ by WebSpark Studios</p>
+    </div>
+    <!-- Bootstrap JS and dependencies (add these scripts at the end of the body for better performance) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,10 @@
+Certificate Number: 1
+Certificate Date: Certificate Date 2024-01-03
+E-Waste Picked on: 2024-01-25
+Description Company Name: Contetra Pvt Ltd
+Company Name: Conterta Private Limited
+Company Address: Swastik Disa Corporate Park, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086
+Amount of E waste Picked: 500
+Invoice: CPL-eWASTE-01/24
+Timestamp: 2024-01-31 16:28:49
+------------------------
